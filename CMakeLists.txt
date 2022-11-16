@@ -8,8 +8,15 @@ add_executable (CleanCode
 	"CleanCodeMain.cpp" 
 	"CleanCodeMain.h"
 	"src/board.cpp"
-	"src/board_slow.cpp" "src/max_area_of_island.cpp" "src/search_matrix.cpp" "src/intervals.cpp" "src/tree_transversal.cpp" 
-	"src/bin_tree_transv_inv.cpp" "src/tree_zigzag.cpp" "src/tree_util.h" "src/tree_avg.cpp" "src/tree_serialize.cpp" "src/sub_tree.cpp" "src/is_valid_bst.cpp" "src/frequency_sort.cpp" "src/find_kth_largest.cpp" "src/reorganize_string.cpp" "src/calculator.cpp" "src/min_max.cpp" "src/linked_list_circle.cpp" "src/fastest_path.cpp" "src/bin_search_range.cpp" "src/html_parser.cpp")
+	"src/board_slow.cpp" "src/max_area_of_island.cpp" "src/search_matrix.cpp" 
+	"src/intervals.cpp" "src/tree_transversal.cpp" 
+	"src/bin_tree_transv_inv.cpp" "src/tree_zigzag.cpp" "src/tree_util.h" 
+	"src/tree_avg.cpp"  "src/sub_tree.cpp" 
+	"src/is_valid_bst.cpp" "src/frequency_sort.cpp" "src/find_kth_largest.cpp" 
+	"src/reorganize_string.cpp" "src/calculator.cpp" "src/min_max.cpp" 
+	"src/linked_list_circle.cpp" "src/fastest_path.cpp" "src/bin_search_range.cpp" 
+	"src/html_parser.cpp"
+)
 
 target_include_directories(CleanCode PUBLIC
 	"src/"
