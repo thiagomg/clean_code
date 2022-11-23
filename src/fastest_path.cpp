@@ -73,9 +73,15 @@ namespace fastest_path {
         return (int)dijkstra(adjacent, n);
     }
 
-    void find_path(vector<node_vector>& adjacent, vector<vector<int>> &paths, vector<int> &distances, std::unordered_set<int> &visited, std::vector<int> &cur_path, int64_t &cur_distance, int from, int to) {
-        std::vector<int> path;
-
+    void find_path(
+        vector<node_vector>& adjacent, // IN: list of adjacent nodes
+        vector<vector<int>> &paths,    // OUT: paths from source to dest node
+        vector<int> &distances,        // OUT: distance from source to dest node, per path
+        std::unordered_set<int> &visited, // visited nodes. Temporary for this function
+        std::vector<int> &cur_path,    // current path. Temporary for this function
+        int64_t &cur_distance,         // distance of current path. Temporary for this function
+        int from, int to
+    ) {
         visited.insert(from);
 
         node_vector& nodes = adjacent[from];
